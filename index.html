@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disquisition - Explore Electrical Engineering & Physics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Disquisition</span>
+            </a>
+            <div class="header-actions">
+                <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search topics, disquisitions, concepts..." autocomplete="off">
+                <button class="search-close" id="searchClose" aria-label="Close search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="main-content">
+        <section class="hero">
+            <h1 class="hero-title">Explore Electrical Engineering & Physics</h1>
+            <p class="hero-subtitle">Deep dive into concepts, or follow structured disquisitions—your journey, your way</p>
+            
+            <div class="hero-search">
+                <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input type="text" class="hero-search-input" placeholder="Search for AC motors, quantum mechanics, thermodynamics..." id="heroSearchInput">
+            </div>
+        </section>
+
+        <!-- Main Cards -->
+        <section class="main-cards">
+            <a href="disquisitions/disquisitions.html" class="feature-card disquisitions-card">
+                <div class="card-icon">📚</div>
+                <h2 class="card-title">Disquisitions</h2>
+                <p class="card-description">Structured learning paths through electrical engineering and physics topics, organized like textbooks with progressive chapters</p>
+                <div class="card-arrow">→</div>
+            </a>
+
+            <a href="topics/topics.html" class="feature-card topics-card">
+                <div class="card-icon">📄</div>
+                <h2 class="card-title">Topics</h2>
+                <p class="card-description">Quick reference articles on specific concepts, components, and principles—your encyclopedia for electrical engineering and physics</p>
+                <div class="card-arrow">→</div>
+            </a>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured-section">
+            <h2 class="section-title">Featured Topics</h2>
+            <div class="featured-grid">
+                <a href="topics/ac-motors.html" class="topic-card">
+                    <h3 class="topic-card-title">AC Motors</h3>
+                    <p class="topic-card-excerpt">Understanding induction and synchronous motors, their principles and applications</p>
+                    <span class="topic-card-tag">Machines</span>
+                </a>
+
+                <a href="topics/transformers.html" class="topic-card">
+                    <h3 class="topic-card-title">Transformers</h3>
+                    <p class="topic-card-excerpt">Core principles of electromagnetic induction and voltage transformation</p>
+                    <span class="topic-card-tag">Power Systems</span>
+                </a>
+
+                <a href="topics/quantum-mechanics.html" class="topic-card">
+                    <h3 class="topic-card-title">Quantum Mechanics</h3>
+                    <p class="topic-card-excerpt">Fundamental principles of quantum theory and wave-particle duality</p>
+                    <span class="topic-card-tag">Physics</span>
+                </a>
+
+                <a href="topics/thermodynamics.html" class="topic-card">
+                    <h3 class="topic-card-title">Thermodynamics</h3>
+                    <p class="topic-card-excerpt">Laws of thermodynamics and their applications in energy systems</p>
+                    <span class="topic-card-tag">Physics</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Popular Disquisitions -->
+        <section class="featured-section">
+            <h2 class="section-title">Popular Disquisitions</h2>
+            <div class="courses-grid">
+                <a href="disquisitions/electric-machines/index.html" class="course-card">
+                    <div class="course-card-header">
+                        <h3 class="course-card-title">Electric Machines</h3>
+                        <span class="course-chapters">12 Chapters</span>
+                    </div>
+                    <p class="course-card-description">Comprehensive study of DC machines, transformers, induction motors, and synchronous machines</p>
+                    <div class="course-card-footer">
+                        <span class="course-tag">Core Disquisition</span>
+                        <span class="course-duration">~8 hours</span>
+                    </div>
+                </a>
+
+                <a href="disquisitions/classical-mechanics/index.html" class="course-card">
+                    <div class="course-card-header">
+                        <h3 class="course-card-title">Classical Mechanics</h3>
+                        <span class="course-chapters">10 Chapters</span>
+                    </div>
+                    <p class="course-card-description">Newton's laws, energy conservation, and motion in classical physics systems</p>
+                    <div class="course-card-footer">
+                        <span class="course-tag">Physics</span>
+                        <span class="course-duration">~10 hours</span>
+                    </div>
+                </a>
+
+                <a href="disquisitions/electromagnetic-theory/index.html" class="course-card">
+                    <div class="course-card-header">
+                        <h3 class="course-card-title">Electromagnetic Theory</h3>
+                        <span class="course-chapters">14 Chapters</span>
+                    </div>
+                    <p class="course-card-description">Maxwell's equations, wave propagation, and electromagnetic field theory</p>
+                    <div class="course-card-footer">
+                        <span class="course-tag">Advanced</span>
+                        <span class="course-duration">~12 hours</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 class="footer-title">Disquisition</h4>
+                <p class="footer-text">An interactive platform for learning electrical engineering and physics</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="disquisitions/disquisitions.html">All Disquisitions</a></li>
+                    <li><a href="topics/topics.html">All Topics</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Connect</h4>
+                <p class="footer-text">Built with curiosity and code</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Disquisition. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
